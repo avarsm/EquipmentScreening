@@ -1,12 +1,3 @@
-/* ===================================================================
-   screening.js: runs every candidate for the selected equipment type
-   against the required duty point and requirements, scores them, and
-   picks a recommendation. Four engines (pump / compressor / fan /
-   heat exchanger) follow the same overall shape so the rest of the
-   app (charts, sensitivity, report) can treat results uniformly
-   wherever possible.
-=================================================================== */
-
 function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
 function round1(v) { return Math.round(v * 10) / 10; }
 
